@@ -25,3 +25,4 @@
 html,body{overflow-x:clip}
 
 .xtop .xig{display:inline-flex;align-items:center}
+.xmapimg{display:block;width:100%;border-radius:var(--xr,20px);overflow:hidden}.xmapimg img{display:block;width:100%;height:340px;object-fit:cover}@media(max-width:600px){.xmapimg img{height:260px}}
