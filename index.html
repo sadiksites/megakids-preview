@@ -45,13 +45,12 @@ footer{text-align:center;padding:20px;font-size:14px;opacity:.7}
 <section id="clubs"><div class="wrap"><h2><i style="background:#e3e7fb">🎨</i><span data-x="clubsT"></span></h2><div id="xclubs"></div></div></section>
 <section id="prices"><div class="wrap"><h2><i style="background:#fff1c9">💳</i><span data-x="priceT"></span></h2><div id="xprice"></div></div></section>
 <section id="docs"><div class="wrap"><h2><i style="background:#fff1c9">📁</i><span data-n="docs"></span></h2><div id="xdocs"></div><ul class="dcs" id="dcs" style="display:none"></ul><p data-t="docsNote" style="opacity:.7;font-size:14px"></p></div></section>
-<section id="symbols"><div class="wrap"><h2><i style="background:#d7f3ef">🇰🇿</i><span data-t="symT"></span></h2><ul class="tiles sym" id="sym"></ul></div></section>
 <section id="excursion"><div class="wrap"><h2><i style="background:#d7f3ef">🗓️</i><span data-x="excT"></span></h2><div id="xexc"></div></div></section>
 <section id="contacts"><div class="wrap"><h2><i style="background:#ffe0d8">📞</i><span data-n="contacts"></span></h2><div class="cnt" id="cnt"></div><div id="xmap"></div></div></section>
 </main><footer data-t="foot"></footer>
 <script src="data.js"></script><script src="render.js"></script><script src="extra.js?v=1"></script><script>
-const $=id=>document.getElementById(id),R=document.documentElement,IC={clubs:'🎨',excursion:'🗓️',about:'🏡',groups:'🧸',staff:'👩‍🏫',news:'📰',docs:'📁',symbols:'🇰🇿',contacts:'📞'};
+const $=id=>document.getElementById(id),R=document.documentElement,IC={clubs:'🎨',excursion:'🗓️',about:'🏡',groups:'🧸',staff:'👩‍🏫',news:'📰',docs:'📁',contacts:'📞'};
 function fit(){R.classList.remove('mob');if(innerWidth<1000){R.classList.add('mob');return}fitNav($('nav'),'mob')}
-window.render=()=>{S.i18n();document.querySelectorAll('[data-n]').forEach(e=>e.textContent=S.title(e.dataset.n));$('h1').textContent=T('heroT');$('nav').innerHTML=S.nav();$('tabs').innerHTML=D.nav.map(n=>`<a href="#${n[0]}"><i>${IC[n[0]]}</i>${n[1+L()]}</a>`).join('');$('lang').innerHTML=S.lang();$('feats').innerHTML=S.feats();$('dcs').innerHTML=S.docs();$('sym').innerHTML=S.sym();$('cnt').innerHTML=S.contacts();document.title=T('heroT');XB.fill();fit()};
+window.render=()=>{S.i18n();document.querySelectorAll('[data-n]').forEach(e=>e.textContent=S.title(e.dataset.n));$('h1').textContent=T('heroT');$('nav').innerHTML=S.nav();$('tabs').innerHTML=D.nav.map(n=>`<a href="#${n[0]}"><i>${IC[n[0]]}</i>${n[1+L()]}</a>`).join('');$('lang').innerHTML=S.lang();$('feats').innerHTML=S.feats();$('dcs').innerHTML=S.docs();$('cnt').innerHTML=S.contacts();document.title=T('heroT');XB.fill();fit()};
 render();addEventListener('resize',fit);addEventListener('load',fit);document.fonts&&document.fonts.ready.then(fit);
 </script></body></html>
