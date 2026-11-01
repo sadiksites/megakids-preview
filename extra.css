@@ -23,3 +23,5 @@
 .xmod button{position:absolute;border:0;background:rgba(255,255,255,.16);color:#fff;width:46px;height:46px;border-radius:50%;font-size:30px;line-height:1;cursor:pointer;display:grid;place-items:center}.xx{top:10px;right:10px}.xp{left:10px;top:50%;transform:translateY(-50%)}.xn{right:10px;top:50%;transform:translateY(-50%)}.xmod.pdf .xp,.xmod.pdf .xn{display:none}
 .xpdf{background:#fff;color:#222;border-radius:14px;overflow:hidden;width:min(900px,100%);height:100%;display:flex;flex-direction:column}.xpdfh{display:flex;gap:14px;align-items:center;padding:10px 14px;border-bottom:1px solid #eee;flex-wrap:wrap}.xpdfh b{margin-right:auto}.xpdfh a{color:var(--xa);font-weight:700}.xpdf iframe{flex:1;border:0;width:100%}
 html,body{overflow-x:clip}
+
+.xtop .xig{display:inline-flex;align-items:center}
